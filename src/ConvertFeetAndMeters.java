@@ -7,14 +7,25 @@
  */
 public class ConvertFeetAndMeters {
     public static void main(String[] args) {
-        double testNumber = 10.0;
-        double convertedNumber = footToMeter(testNumber);
-        // System.out.format("%.2f", convertedNumber);
-        System.out.printf("%.3f\n", convertedNumber);
-        double newConvertedNumber = meterToFoot(testNumber);
-        // System.out.format("%.2f", newConvertedNumber);
-        System.out.printf("%.3f\n", newConvertedNumber);
-
+        // Create starting values for feet and meters to be converted
+        // Starting value for feet is 1.0
+        double startingFeet = 1.0;
+        // Starting value for meters is 20.0
+        double startingMeters = 20.0;
+        // Setup up table headers
+        String tableHeader = "Feet \t Meters  | \t Meters  Feet";
+        System.out.println(tableHeader);
+        // Create loop to output values for table 
+        while ((startingFeet <= 10.0) && (startingMeters <= 65.0)){
+            // Convert the values to their respective measurements
+            double feetToMeters = footToMeter(startingFeet);
+            double metersToFeet = meterToFoot(startingMeters);
+            // Output values back out into table
+            System.out.println(startingFeet + "\t " + feetToMeters + "\t | \t " + startingMeters + "\t " + metersToFeet);
+            // Increment starting feet and meters values
+            startingFeet += 1.0;
+            startingMeters += 5.0;
+        }
     } 
 
     public static double footToMeter(double foot) {
