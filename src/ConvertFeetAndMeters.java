@@ -9,4 +9,20 @@ public class ConvertFeetAndMeters {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
     } 
+
+    public static double footToMeter(double foot){
+        // Create the constant for feet in meter
+        final double FEET_IN_METER = 0.305;
+        // Convert feet to meters
+        double conversion = foot * FEET_IN_METER;
+        // Return conversion
+        return conversion;
+    }
+
+    public static double meterToFoot(double meter){
+        meter += 5;
+        return meter;
+    }
+
+
 }
