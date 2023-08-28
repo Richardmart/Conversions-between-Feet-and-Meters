@@ -7,7 +7,9 @@
  */
 public class ConvertFeetAndMeters {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        double testNumber = 1.0;
+        double convertedNumber = footToMeter(testNumber);
+        System.out.print(convertedNumber);
     } 
 
     public static double footToMeter(double foot){
