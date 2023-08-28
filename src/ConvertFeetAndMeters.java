@@ -22,7 +22,7 @@ public class ConvertFeetAndMeters {
             double metersToFeet = meterToFoot(startingMeters);
             // Output values back out into table
             System.out.println(startingFeet + "\t " + feetToMeters + "\t | \t " + startingMeters + "\t " + metersToFeet);
-            // Increment starting feet and meters values
+            // Increment starting feet and meter values
             startingFeet += 1.0;
             startingMeters += 5.0;
         }
